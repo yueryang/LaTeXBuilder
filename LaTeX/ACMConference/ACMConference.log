@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  14 SEP 2025 00:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  6 NOV 2025 00:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -750,49 +750,55 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip84
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (d:/texlive/2025/texmf-dist/tex/latex/tools/enumerate.sty
-Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
-\@enLab=\toks42
+) (d:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\enitkv@toks@=\toks42
+\labelindent=\skip85
+\enit@outerparindent=\dimen194
+\enit@toks=\toks43
+\enit@inbox=\box63
+\enit@count@id=\count329
+\enitdp@description=\count330
 )
 (d:/texlive/2025/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
 (d:/texlive/2025/texmf-dist/tex/latex/sttools/flushend.sty
 Package: flushend 2021/10/04 v4.0 Balancing columns in twocolumn mode
-\flushend@@lastskip@a=\skip85
-\flushend@@lastskip@b=\skip86
-\flushend@@lastnode=\count329
-\var@@loop@iter=\count330
-\var@@temp@spread=\dimen194
-\var@@temp@a=\dimen195
-\var@@temp@loop=\dimen196
-\flushend@@page@rule=\dimen197
-\flushend@@varbox@lastpage=\box63
-\flushend@@varbox@a=\box64
-\flushend@@varbox@c=\box65
-\flushend@@tempbox@a=\box66
-\flushend@@tempbox@c=\box67
-\flushend@@floatbox=\box68
-\@viper=\box69
-\hold@viper=\box70
-\atColsBreak=\toks43
-\atColsEnd=\toks44
-\oldbreak@skip=\dimen198
+\flushend@@lastskip@a=\skip86
+\flushend@@lastskip@b=\skip87
+\flushend@@lastnode=\count331
+\var@@loop@iter=\count332
+\var@@temp@spread=\dimen195
+\var@@temp@a=\dimen196
+\var@@temp@loop=\dimen197
+\flushend@@page@rule=\dimen198
+\flushend@@varbox@lastpage=\box64
+\flushend@@varbox@a=\box65
+\flushend@@varbox@c=\box66
+\flushend@@tempbox@a=\box67
+\flushend@@tempbox@c=\box68
+\flushend@@floatbox=\box69
+\@viper=\box70
+\hold@viper=\box71
+\atColsBreak=\toks44
+\atColsEnd=\toks45
+\oldbreak@skip=\dimen199
 )
 Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 30.
 
-\c@theorem=\count331
+\c@theorem=\count333
 
 (d:/texlive/2025/texmf-dist/tex/latex/preprint/balance.sty
 Package: balance 1999/02/23 4.3 (PWD)
-\oldvsize=\dimen199
+\oldvsize=\dimen256
 )
 Excluding comment 'screenonly' Include comment 'printonly'
 Include comment 'anonsuppress'
 (d:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count332
-\l__pdf_internal_box=\box71
+\l__color_backend_stack_int=\count334
+\l__pdf_internal_box=\box72
 )
 (./ACMConference.aux)
 \openout1 = `ACMConference.aux'.
@@ -962,17 +968,17 @@ Package hyperref Info: Link coloring OFF on input line 30.
 
 (d:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count333
-\scratchdimen=\dimen256
-\scratchbox=\box72
-\nofMPsegments=\count334
-\nofMParguments=\count335
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count336
-\MPscratchDim=\dimen257
-\MPnumerator=\count337
-\makeMPintoPDFobject=\count338
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count335
+\scratchdimen=\dimen257
+\scratchbox=\box73
+\nofMPsegments=\count336
+\nofMParguments=\count337
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count338
+\MPscratchDim=\dimen258
+\MPnumerator=\count339
+\makeMPintoPDFobject=\count340
+\everyMPtoPDFconversion=\toks47
 ) (d:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1016,8 +1022,8 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count339
-\c@mv@boldtabular=\count340
+\c@mv@tabular=\count341
+\c@mv@boldtabular=\count342
 (d:/texlive/2025/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
@@ -1401,10 +1407,10 @@ Package rerunfilecheck Info: File `ACMConference.out' has not changed.
 (rerunfilecheck)             Checksum: D206C1D95F4532CBEE2C4B36F2CD1DC1;1228.
  ) 
 Here is how much of TeX's memory you used:
- 22137 strings out of 473190
- 356362 string characters out of 5719979
- 836227 words of memory out of 5000000
- 44480 multiletter control sequences out of 15000+600000
+ 22434 strings out of 473190
+ 361363 string characters out of 5719979
+ 843448 words of memory out of 5000000
+ 44775 multiletter control sequences out of 15000+600000
  751478 words of font info for 341 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  90i,12n,131p,1083b,634s stack positions out of 10000i,1000n,20000p,200000b,200000s

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  14 SEP 2025 00:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  6 NOV 2025 00:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1360,11 +1360,7 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip198
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (d:/texlive/2025/texmf-dist/tex/latex/tools/enumerate.sty
-Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
-\@enLab=\toks68
-)
-(d:/texlive/2025/texmf-dist/tex/latex/xurl/xurl.sty
+) (d:/texlive/2025/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
 (d:/texlive/2025/texmf-dist/tex/latex/sttools/flushend.sty
@@ -1385,8 +1381,8 @@ Package: flushend 2021/10/04 v4.0 Balancing columns in twocolumn mode
 \flushend@@floatbox=\box88
 \@viper=\box89
 \hold@viper=\box90
-\atColsBreak=\toks69
-\atColsEnd=\toks70
+\atColsBreak=\toks68
+\atColsEnd=\toks69
 \oldbreak@skip=\dimen343
 )
 Package translations Info: No language package found. I am going to use `englis
@@ -1610,12 +1606,12 @@ LaTeX Font Info:    ... okay on input line 68.
 \scratchbox=\box91
 \nofMPsegments=\count396
 \nofMParguments=\count397
-\everyMPshowfont=\toks71
+\everyMPshowfont=\toks70
 \MPscratchCnt=\count398
 \MPscratchDim=\dimen349
 \MPnumerator=\count399
 \makeMPintoPDFobject=\count400
-\everyMPtoPDFconversion=\toks72
+\everyMPtoPDFconversion=\toks71
 )
 Package microtype Info: Patching varwidth to enable character protrusion.
 \MT@vwid@leftmargin=\dimen350
@@ -1898,10 +1894,10 @@ Package rerunfilecheck Info: File `TSP_template.out' has not changed.
 (\end occurred when \ifnum on line 68 was incomplete)
 (\end occurred when \iffalse on line 68 was incomplete) 
 Here is how much of TeX's memory you used:
- 35786 strings out of 473190
- 655388 string characters out of 5719979
- 1098481 words of memory out of 5000000
- 58011 multiletter control sequences out of 15000+600000
+ 35755 strings out of 473190
+ 654769 string characters out of 5719979
+ 1098004 words of memory out of 5000000
+ 57982 multiletter control sequences out of 15000+600000
  654741 words of font info for 407 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,15n,131p,1082b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1910,7 +1906,7 @@ ist/fonts/type1/public/cm-super/sfss0800.pfb><d:/texlive/2025/texmf-dist/fonts/
 type1/urw/palatino/uplb8a.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/palat
 ino/uplbi8a.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb
 >
-Output written on TSP_template.pdf (3 pages, 157118 bytes).
+Output written on TSP_template.pdf (3 pages, 157114 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  130 compressed objects within 2 object streams

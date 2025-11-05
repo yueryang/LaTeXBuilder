@@ -297,6 +297,23 @@ The style of MDPI is close to that of TSP. The template actively offers marking 
 \firstnote{Current address: Department/College/School/Faculty/Institute/... A, University A, City A, Country/Region A. }
 ```
 
+## Nature
+
+The style of Nature is close to that of Elsevier. The template actively offers marking ways of co-first and co-corresponding authors. Use the following between ``\title`` and ``\keywords`` to achieve co-first and co-coresponding authors. 
+
+```
+\author[1,2,3,+]{San Zhang}
+\author[1,2,+]{Si Li}
+\author[1]{Wu Wang}
+\author[1,*]{Liu Zhao}
+\author[1,*]{Qi Sun}
+\affil[1]{Department/College/School/Faculty/Institute/... A, University A, City A, Country/Region A}
+\affil[2]{Department/College/School/Faculty/Institute/... B, University B, City B, Country/Region B}
+\affil[3]{Department/College/School/Faculty/Institute/... C, University C, City C, Country/Region C}
+\affil[+]{These authors contributed equally to this work. }
+\affil[*]{Corresponding authors: Liu Zhao (liuzhao@gmail.com) and Qi Sun (qisun@gmail.com)}
+```
+
 ---
 
 Wish you all the best! 

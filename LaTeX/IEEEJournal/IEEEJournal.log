@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  14 SEP 2025 00:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  6 NOV 2025 00:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -272,6 +272,13 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count293
 \@thisrulewidth=\dimen188
 )
+(d:/texlive/2025/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip57
+\multirow@cntb=\count294
+\multirow@dima=\skip58
+\bigstrutjot=\dimen189
+)
 (d:/texlive/2025/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box56
@@ -282,7 +289,7 @@ nment
 
 (d:/texlive/2025/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count294
+\c@float@type=\count295
 \float@exts=\toks24
 \float@box=\box57
 \@float@everytoks=\toks25
@@ -292,7 +299,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks26
-\c@algorithm=\count295
+\c@algorithm=\count296
 )
 (d:/texlive/2025/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
@@ -301,21 +308,26 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count296
-\c@ALG@rem=\count297
-\c@ALG@nested=\count298
-\ALG@tlm=\skip57
-\ALG@thistlm=\skip58
-\c@ALG@Lnr=\count299
-\c@ALG@blocknr=\count300
-\c@ALG@storecount=\count301
-\c@ALG@tmpcounter=\count302
-\ALG@tmplength=\skip59
+\c@ALG@line=\count297
+\c@ALG@rem=\count298
+\c@ALG@nested=\count299
+\ALG@tlm=\skip59
+\ALG@thistlm=\skip60
+\c@ALG@Lnr=\count300
+\c@ALG@blocknr=\count301
+\c@ALG@storecount=\count302
+\c@ALG@tmpcounter=\count303
+\ALG@tmplength=\skip61
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (d:/texlive/2025/texmf-dist/tex/latex/tools/enumerate.sty
-Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
-\@enLab=\toks27
+) (d:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip62
+\enit@outerparindent=\dimen190
+\enit@toks=\toks27
+\enit@inbox=\box59
+\enit@count@id=\count304
+\enitdp@description=\count305
 )
 (d:/texlive/2025/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
@@ -326,30 +338,30 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ))
 (d:/texlive/2025/texmf-dist/tex/latex/sttools/flushend.sty
 Package: flushend 2021/10/04 v4.0 Balancing columns in twocolumn mode
-\flushend@@lastskip@a=\skip60
-\flushend@@lastskip@b=\skip61
-\flushend@@lastnode=\count303
-\var@@loop@iter=\count304
-\var@@temp@spread=\dimen189
-\var@@temp@a=\dimen190
-\var@@temp@loop=\dimen191
-\flushend@@page@rule=\dimen192
-\flushend@@varbox@lastpage=\box59
-\flushend@@varbox@a=\box60
-\flushend@@varbox@c=\box61
-\flushend@@tempbox@a=\box62
-\flushend@@tempbox@c=\box63
-\flushend@@floatbox=\box64
-\@viper=\box65
-\hold@viper=\box66
+\flushend@@lastskip@a=\skip63
+\flushend@@lastskip@b=\skip64
+\flushend@@lastnode=\count306
+\var@@loop@iter=\count307
+\var@@temp@spread=\dimen191
+\var@@temp@a=\dimen192
+\var@@temp@loop=\dimen193
+\flushend@@page@rule=\dimen194
+\flushend@@varbox@lastpage=\box60
+\flushend@@varbox@a=\box61
+\flushend@@varbox@c=\box62
+\flushend@@tempbox@a=\box63
+\flushend@@tempbox@c=\box64
+\flushend@@floatbox=\box65
+\@viper=\box66
+\hold@viper=\box67
 \atColsBreak=\toks28
 \atColsEnd=\toks29
-\oldbreak@skip=\dimen193
+\oldbreak@skip=\dimen195
 )
 (d:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count305
-\l__pdf_internal_box=\box67
+\l__color_backend_stack_int=\count308
+\l__pdf_internal_box=\box68
 )
 
 LaTeX Warning: Unused global option(s):
@@ -358,34 +370,34 @@ LaTeX Warning: Unused global option(s):
 (./IEEEJournal.aux)
 \openout1 = `IEEEJournal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 -- Lines per column: 58 (exact).
 (d:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count306
-\scratchdimen=\dimen194
-\scratchbox=\box68
-\nofMPsegments=\count307
-\nofMParguments=\count308
+\scratchcounter=\count309
+\scratchdimen=\dimen196
+\scratchbox=\box69
+\nofMPsegments=\count310
+\nofMParguments=\count311
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count309
-\MPscratchDim=\dimen195
-\MPnumerator=\count310
-\makeMPintoPDFobject=\count311
+\MPscratchCnt=\count312
+\MPscratchDim=\dimen197
+\MPnumerator=\count313
+\makeMPintoPDFobject=\count314
 \everyMPtoPDFconversion=\toks31
 ) (d:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -397,42 +409,42 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 (../Content/title.tex)
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 30.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
 
  (d:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
 
 
 (d:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (../Content/title.tex)
 (../Content/title.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 \OT1/ptm/m/n/8 A, Uni-ver-sity A, City A, Coun-try/Region A; the De-part-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 \OT1/ptm/m/n/8 ment/College/School/Faculty/Institute/... B, Uni-ver-sity B, Cit
 y B,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 [][][]\OT1/ptm/m/n/8 Si Li was with the De-part-ment/College/School/Faculty/Ins
 titute/...
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 \OT1/ptm/m/n/8 A, Uni-ver-sity A, City A, Coun-try/Region A and the De-part-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 \OT1/ptm/m/n/8 ment/College/School/Faculty/Institute/... B, Uni-ver-sity B, Cit
 y B,
  []
@@ -475,10 +487,10 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5510 strings out of 473190
- 85339 string characters out of 5719979
- 496775 words of memory out of 5000000
- 28645 multiletter control sequences out of 15000+600000
+ 5874 strings out of 473190
+ 91517 string characters out of 5719979
+ 504661 words of memory out of 5000000
+ 29003 multiletter control sequences out of 15000+600000
  605613 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,1081b,423s stack positions out of 10000i,1000n,20000p,200000b,200000s

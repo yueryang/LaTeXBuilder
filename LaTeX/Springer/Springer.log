@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  14 SEP 2025 00:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  6 NOV 2025 00:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,9 +350,14 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip60
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (d:/texlive/2025/texmf-dist/tex/latex/tools/enumerate.sty
-Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
-\@enLab=\toks30
+) (d:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip61
+\enit@outerparindent=\dimen188
+\enit@toks=\toks30
+\enit@inbox=\box105
+\enit@count@id=\count326
+\enitdp@description=\count327
 )
 (d:/texlive/2025/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
@@ -363,30 +368,30 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ))
 (d:/texlive/2025/texmf-dist/tex/latex/sttools/flushend.sty
 Package: flushend 2021/10/04 v4.0 Balancing columns in twocolumn mode
-\flushend@@lastskip@a=\skip61
-\flushend@@lastskip@b=\skip62
-\flushend@@lastnode=\count326
-\var@@loop@iter=\count327
-\var@@temp@spread=\dimen188
-\var@@temp@a=\dimen189
-\var@@temp@loop=\dimen190
-\flushend@@page@rule=\dimen191
-\flushend@@varbox@lastpage=\box105
-\flushend@@varbox@a=\box106
-\flushend@@varbox@c=\box107
-\flushend@@tempbox@a=\box108
-\flushend@@tempbox@c=\box109
-\flushend@@floatbox=\box110
-\@viper=\box111
-\hold@viper=\box112
+\flushend@@lastskip@a=\skip62
+\flushend@@lastskip@b=\skip63
+\flushend@@lastnode=\count328
+\var@@loop@iter=\count329
+\var@@temp@spread=\dimen189
+\var@@temp@a=\dimen190
+\var@@temp@loop=\dimen191
+\flushend@@page@rule=\dimen192
+\flushend@@varbox@lastpage=\box106
+\flushend@@varbox@a=\box107
+\flushend@@varbox@c=\box108
+\flushend@@tempbox@a=\box109
+\flushend@@tempbox@c=\box110
+\flushend@@floatbox=\box111
+\@viper=\box112
+\hold@viper=\box113
 \atColsBreak=\toks31
 \atColsEnd=\toks32
-\oldbreak@skip=\dimen192
+\oldbreak@skip=\dimen193
 )
 (d:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count328
-\l__pdf_internal_box=\box113
+\l__color_backend_stack_int=\count330
+\l__pdf_internal_box=\box114
 )
 (./Springer.aux)
 \openout1 = `Springer.aux'.
@@ -408,16 +413,16 @@ LaTeX Font Info:    ... okay on input line 16.
 
 (d:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count329
-\scratchdimen=\dimen193
-\scratchbox=\box114
-\nofMPsegments=\count330
-\nofMParguments=\count331
+\scratchcounter=\count331
+\scratchdimen=\dimen194
+\scratchbox=\box115
+\nofMPsegments=\count332
+\nofMParguments=\count333
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count332
-\MPscratchDim=\dimen194
-\MPnumerator=\count333
-\makeMPintoPDFobject=\count334
+\MPscratchCnt=\count334
+\MPscratchDim=\dimen195
+\MPnumerator=\count335
+\makeMPintoPDFobject=\count336
 \everyMPtoPDFconversion=\toks34
 ) (d:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -476,10 +481,10 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5123 strings out of 473190
- 73810 string characters out of 5719979
- 481953 words of memory out of 5000000
- 28266 multiletter control sequences out of 15000+600000
+ 5421 strings out of 473190
+ 78819 string characters out of 5719979
+ 489174 words of memory out of 5000000
+ 28562 multiletter control sequences out of 15000+600000
  570123 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,8n,65p,1078b,420s stack positions out of 10000i,1000n,20000p,200000b,200000s

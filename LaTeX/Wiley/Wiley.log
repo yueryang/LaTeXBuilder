@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  14 SEP 2025 00:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  6 NOV 2025 00:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1038,28 +1038,37 @@ LaTeX Info: Redefining \bm on input line 219.
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box132
 )
+(d:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip102
+\enit@outerparindent=\dimen325
+\enit@toks=\toks58
+\enit@inbox=\box133
+\enit@count@id=\count430
+\enitdp@description=\count431
+)
 (d:/texlive/2025/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
 (d:/texlive/2025/texmf-dist/tex/latex/sttools/flushend.sty
 Package: flushend 2021/10/04 v4.0 Balancing columns in twocolumn mode
-\flushend@@lastskip@a=\skip102
-\flushend@@lastskip@b=\skip103
-\flushend@@lastnode=\count430
-\var@@loop@iter=\count431
-\var@@temp@spread=\dimen325
-\var@@temp@a=\dimen326
-\var@@temp@loop=\dimen327
-\flushend@@page@rule=\dimen328
-\flushend@@varbox@lastpage=\box133
-\flushend@@varbox@a=\box134
-\flushend@@varbox@c=\box135
-\flushend@@tempbox@a=\box136
-\flushend@@tempbox@c=\box137
-\flushend@@floatbox=\box138
-\atColsBreak=\toks58
-\atColsEnd=\toks59
-\oldbreak@skip=\dimen329
+\flushend@@lastskip@a=\skip103
+\flushend@@lastskip@b=\skip104
+\flushend@@lastnode=\count432
+\var@@loop@iter=\count433
+\var@@temp@spread=\dimen326
+\var@@temp@a=\dimen327
+\var@@temp@loop=\dimen328
+\flushend@@page@rule=\dimen329
+\flushend@@varbox@lastpage=\box134
+\flushend@@varbox@a=\box135
+\flushend@@varbox@c=\box136
+\flushend@@tempbox@a=\box137
+\flushend@@tempbox@c=\box138
+\flushend@@floatbox=\box139
+\atColsBreak=\toks59
+\atColsEnd=\toks60
+\oldbreak@skip=\dimen330
 )
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 26
 .
@@ -1069,8 +1078,8 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (d:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count432
-\l__pdf_internal_box=\box139
+\l__color_backend_stack_int=\count434
+\l__pdf_internal_box=\box140
 )
 
 LaTeX Warning: Unused global option(s):
@@ -1099,17 +1108,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
  (d:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count433
-\scratchdimen=\dimen330
-\scratchbox=\box140
-\nofMPsegments=\count434
-\nofMParguments=\count435
-\everyMPshowfont=\toks60
-\MPscratchCnt=\count436
-\MPscratchDim=\dimen331
-\MPnumerator=\count437
-\makeMPintoPDFobject=\count438
-\everyMPtoPDFconversion=\toks61
+\scratchcounter=\count435
+\scratchdimen=\dimen331
+\scratchbox=\box141
+\nofMPsegments=\count436
+\nofMParguments=\count437
+\everyMPshowfont=\toks61
+\MPscratchCnt=\count438
+\MPscratchDim=\dimen332
+\MPnumerator=\count439
+\makeMPintoPDFobject=\count440
+\everyMPtoPDFconversion=\toks62
 ) (d:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1127,8 +1136,8 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 26.
 Package microtype Info: Patching varwidth to enable character protrusion.
-\MT@vwid@leftmargin=\dimen332
-\MT@vwid@rightmargin=\dimen333
+\MT@vwid@leftmargin=\dimen333
+\MT@vwid@rightmargin=\dimen334
 LaTeX Info: Redefining \microtypecontext on input line 26.
 Package microtype Info: Applying patch `item' on input line 26.
 Package microtype Info: Applying patch `toc' on input line 26.
@@ -1186,7 +1195,7 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count439
+\c@lstlisting=\count441
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 54
 .
 (d:/texlive/2025/texmf-dist/tex/latex/psnfss/t1phv.fd
@@ -1334,10 +1343,10 @@ LaTeX Font Warning: Size substitutions with differences
 (\end occurred when \iftrue on line 4740 was incomplete)
 (\end occurred when \ifx on line 2 was incomplete) 
 Here is how much of TeX's memory you used:
- 22862 strings out of 473190
- 359095 string characters out of 5719979
- 822198 words of memory out of 5000000
- 45435 multiletter control sequences out of 15000+600000
+ 23189 strings out of 473190
+ 364707 string characters out of 5719979
+ 829865 words of memory out of 5000000
+ 45758 multiletter control sequences out of 15000+600000
  660636 words of font info for 263 fonts, out of 8000000 for 9000
  1167 hyphenation exceptions out of 8191
  90i,10n,93p,1081b,684s stack positions out of 10000i,1000n,20000p,200000b,200000s

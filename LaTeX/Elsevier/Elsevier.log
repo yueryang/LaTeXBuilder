@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  14 SEP 2025 00:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  6 NOV 2025 00:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -704,90 +704,95 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip75
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (d:/texlive/2025/texmf-dist/tex/latex/tools/enumerate.sty
-Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
-\@enLab=\toks38
+) (d:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip76
+\enit@outerparindent=\dimen266
+\enit@toks=\toks38
+\enit@inbox=\box68
+\enit@count@id=\count348
+\enitdp@description=\count349
 )
 (d:/texlive/2025/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
 (d:/texlive/2025/texmf-dist/tex/latex/sttools/flushend.sty
 Package: flushend 2021/10/04 v4.0 Balancing columns in twocolumn mode
-\flushend@@lastskip@a=\skip76
-\flushend@@lastskip@b=\skip77
-\flushend@@lastnode=\count348
-\var@@loop@iter=\count349
-\var@@temp@spread=\dimen266
-\var@@temp@a=\dimen267
-\var@@temp@loop=\dimen268
-\flushend@@page@rule=\dimen269
-\flushend@@varbox@lastpage=\box68
-\flushend@@varbox@a=\box69
-\flushend@@varbox@c=\box70
-\flushend@@tempbox@a=\box71
-\flushend@@tempbox@c=\box72
-\flushend@@floatbox=\box73
-\@viper=\box74
-\hold@viper=\box75
+\flushend@@lastskip@a=\skip77
+\flushend@@lastskip@b=\skip78
+\flushend@@lastnode=\count350
+\var@@loop@iter=\count351
+\var@@temp@spread=\dimen267
+\var@@temp@a=\dimen268
+\var@@temp@loop=\dimen269
+\flushend@@page@rule=\dimen270
+\flushend@@varbox@lastpage=\box69
+\flushend@@varbox@a=\box70
+\flushend@@varbox@c=\box71
+\flushend@@tempbox@a=\box72
+\flushend@@tempbox@c=\box73
+\flushend@@floatbox=\box74
+\@viper=\box75
+\hold@viper=\box76
 \atColsBreak=\toks39
 \atColsEnd=\toks40
-\oldbreak@skip=\dimen270
+\oldbreak@skip=\dimen271
 )
 LaTeX Font Info:    Trying to load font information for T1+stix on input line 1
-6.
+7.
 
 (d:/texlive/2025/texmf-dist/tex/latex/stix/t1stix.fd
 File: t1stix.fd 2015/04/17 v1.1.2-latex STIX T1 font definitions
 ) (./Elsevier.aux)
 \openout1 = `Elsevier.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 17.
 LaTeX Font Info:    Trying to load font information for LS1+stix on input line 
-16.
+17.
 
 (d:/texlive/2025/texmf-dist/tex/latex/stix/ls1stix.fd
 File: ls1stix.fd 2015/04/17 v1.1.2-latex STIX LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 17.
 LaTeX Font Info:    Trying to load font information for LS2+stix on input line 
-16.
+17.
 
 (d:/texlive/2025/texmf-dist/tex/latex/stix/ls2stix.fd
 File: ls2stix.fd 2015/04/17 v1.1.2-latex STIX LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    ... okay on input line 17.
 
 (d:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count350
-\scratchdimen=\dimen271
-\scratchbox=\box76
-\nofMPsegments=\count351
-\nofMParguments=\count352
+\scratchcounter=\count352
+\scratchdimen=\dimen272
+\scratchbox=\box77
+\nofMPsegments=\count353
+\nofMParguments=\count354
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count353
-\MPscratchDim=\dimen272
-\MPnumerator=\count354
-\makeMPintoPDFobject=\count355
+\MPscratchCnt=\count355
+\MPscratchDim=\dimen273
+\MPnumerator=\count356
+\makeMPintoPDFobject=\count357
 \everyMPtoPDFconversion=\toks42
 ) (d:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -798,9 +803,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Command `\dddot' is already robust on input line 16.
-LaTeX Info: Command `\ddddot' is already robust on input line 16.
-Package hyperref Info: Link coloring ON on input line 16.
+LaTeX Info: Command `\dddot' is already robust on input line 17.
+LaTeX Info: Command `\ddddot' is already robust on input line 17.
+Package hyperref Info: Link coloring ON on input line 17.
 
 (./Elsevier.out) (./Elsevier.out)
 \@outlinefile=\write3
@@ -847,100 +852,100 @@ tim
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 18.
+(hyperref)                removing `\@ifnextchar' on input line 19.
 
 \verbatim@out=\write4
 \openout4 = `Elsevier.abs'.
 
 (../Content/keyword.tex) (../Content/title.tex)
 LaTeX Font Info:    Trying to load font information for LS1+stixscr on input li
-ne 51.
+ne 52.
 
 (d:/texlive/2025/texmf-dist/tex/latex/stix/ls1stixscr.fd
 File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixex on input lin
-e 51.
+e 52.
 
 (d:/texlive/2025/texmf-dist/tex/latex/stix/ls2stixex.fd
 File: ls2stixex.fd 2015/04/17 v1.1.2-latex STIX extentions LS2 font definitions
 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
 
 
 (d:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
 
 
 (d:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixfrak on input l
-ine 51.
+ine 52.
 
 (d:/texlive/2025/texmf-dist/tex/latex/stix/ls1stixfrak.fd
 File: ls1stixfrak.fd 2015/04/17 v1.1.2-latex STIX fraktur LS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixbb on input lin
-e 51.
+e 52.
 
 (d:/texlive/2025/texmf-dist/tex/latex/stix/ls1stixbb.fd
 File: ls1stixbb.fd 2015/04/17 v1.1.2-latex STIX blackboard LS1 font definitions
 
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixcal on input li
-ne 51.
+ne 52.
 
 (d:/texlive/2025/texmf-dist/tex/latex/stix/ls2stixcal.fd
 File: ls2stixcal.fd 2015/04/17 v1.1.2-latex STIX calligraphic LS2 font definiti
 ons
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixsf on input lin
-e 51.
+e 52.
 
 (d:/texlive/2025/texmf-dist/tex/latex/stix/ls1stixsf.fd
 File: ls1stixsf.fd 2015/04/17 v1.1.2-latex STIX sans-serif LS1 font definitions
 
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixtt on input lin
-e 51.
+e 52.
 
 (d:/texlive/2025/texmf-dist/tex/latex/stix/ls2stixtt.fd
 File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
 
 )
-Overfull \hbox (123.62721pt too wide) detected at line 51
+Overfull \hbox (123.62721pt too wide) detected at line 52
 []
  []
 
 (./Elsevier.abs (../Content/abstract.tex))
 
-Package hyperref Warning: Ignoring empty anchor on input line 51.
+Package hyperref Warning: Ignoring empty anchor on input line 52.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 51.
+Package hyperref Warning: Ignoring empty anchor on input line 52.
 
 <thumbnails/cas-email.jpeg, id=36, 225.84375pt x 225.84375pt>
 File: thumbnails/cas-email.jpeg Graphic file (type jpg)
 <use thumbnails/cas-email.jpeg>
-Package pdftex.def Info: thumbnails/cas-email.jpeg  used on input line 51.
+Package pdftex.def Info: thumbnails/cas-email.jpeg  used on input line 52.
 (pdftex.def)             Requested size: 7.99838pt x 8.0pt.
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 51
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 52
 .
 (d:/texlive/2025/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 6.80005pt on input line 51.
+(Font)              scaled to size 6.80005pt on input line 52.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 51.
+Package hyperref Warning: Ignoring empty anchor on input line 52.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 51.
+Package hyperref Warning: Ignoring empty anchor on input line 52.
 
 (../Content/1.tex) (../Content/2.tex) (../Content/3.tex) (../Content/4.tex)
 (../Content/5.tex
@@ -988,7 +993,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.67 \end{document}
+l.68 \end{document}
                     <../Figure/tree.pdf>] (./Elsevier.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
@@ -998,10 +1003,10 @@ Package rerunfilecheck Info: File `Elsevier.out' has not changed.
 (rerunfilecheck)             Checksum: F4664B9F82B9415B67E743792A0898B0;924.
  ) 
 Here is how much of TeX's memory you used:
- 17702 strings out of 473190
- 265005 string characters out of 5719979
- 678861 words of memory out of 5000000
- 40594 multiletter control sequences out of 15000+600000
+ 18011 strings out of 473190
+ 270093 string characters out of 5719979
+ 686534 words of memory out of 5000000
+ 40901 multiletter control sequences out of 15000+600000
  645709 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,8n,93p,1078b,479s stack positions out of 10000i,1000n,20000p,200000b,200000s
