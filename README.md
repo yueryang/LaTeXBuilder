@@ -14,15 +14,18 @@ All TEX code in this repository follows the LaTeX indentation, which is purely m
 Readers are free to adjust and optimize it as needed under equivalent conditions. 
 To track your LaTeX, please refer to [LaTeXChecker](https://github.com/yueryang/LaTeXChecker). 
 
+Please check your manuscript carefully before submission. We are not responsible for any direct or indirect losses arising from the use of this repository. 
+
 ## Usage
 
-Currently, 8 well-acknowledged templates are deployed. Users should only change the packages and authors' information to adapt to the specified templates. 
+Currently, 9 well-acknowledged templates are deployed. Users should only change the packages and authors' information to adapt to the specified templates. 
 
 - ACMConference
 - Elsevier
 - IEEEConference
 - IEEEJournal
 - MDPI
+- Nature
 - Springer
 - TSP
 - Wiley
@@ -407,15 +410,18 @@ LaTeX 最初的设计理念是将内容与格式分离，从而简化排版。
 本存储库中的所有 TEX 代码遵循 LaTeX 缩进，纯属笔者本人的偏好，使用时读者可以随意在等效的情况下进行调整和优化。
 要追踪您的 LaTeX，请参阅 [LaTeXChecker](https://github.com/yueryang/LaTeXChecker)。
 
+请在投稿前仔细检查您的手稿，我们对因使用本存储库而产生的任何直接或间接损失不承担任何责任。
+
 ## 用法
 
-目前已部署的 8 个较为著名的模板如下，理论上，若要手动操作，用户只需修改宏包和作者信息即可适配指定的模板。
+目前已部署的 9 个较为著名的模板如下，理论上，若要手动操作，用户只需修改宏包和作者信息即可适配指定的模板。
 
 - ACMConference
 - Elsevier
 - IEEEConference
 - IEEEJournal
 - MDPI
+- Nature
 - Springer
 - TSP
 - Wiley
