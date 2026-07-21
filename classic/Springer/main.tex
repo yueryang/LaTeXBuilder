@@ -1,0 +1,63 @@
+\documentclass[runningheads]{llncs}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage{flushend}
+\newcommand{\keywordSeparator}{ \and}
+
+\begin{document}
+
+\title{Title}
+
+\author{
+	San Zhang\inst{1,2,3,\#}
+	\and Si Li\inst{1,2,\#}
+	\and Wu Wang\inst{1}
+	\and Liu Zhao\inst{1,*}
+	\and Qi Sun\inst{1,*}
+}
+
+\authorrunning{Zhang S et al. }
+
+\institute{
+	Department/College/School/Faculty/Institute/... A, University A, City A, Country/Region A
+	\and Department/College/School/Faculty/Institute/... B, University B, City B, Country/Region B
+	\and Department/College/School/Faculty/Institute/... C, University C, City C, Country/Region C
+}
+
+\maketitle
+
+\renewcommand{\thefootnote}{}
+\footnotetext{\textsuperscript{\#} Co-first authors contributed equally to this work. }
+\footnotetext{* Corresponding author(s): Liu Zhao (\url{liuzhao@gmail.com}) and Qi Sun (\url{qisun@gmail.com}). }
+
+\begin{abstract}
+	\input{../Content/abstract.tex}
+	\keywords{\input{../Content/keyword.tex}}
+\end{abstract}
+
+\section*{Competing Interests}
+
+The authors declare no competing interests.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{../Content/1.tex}
+\input{../Content/2.tex}
+\input{../Content/3.tex}
+\input{../Content/4.tex}
+\input{../Content/5.tex}
+\input{../Content/6.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{splncs04}
+\bibliography{../Content/ref.bib}
+
+\end{document}

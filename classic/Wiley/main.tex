@@ -1,0 +1,73 @@
+\documentclass[AMA,Times1COL]{WileyNJDv5}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+%\usepackage[numbers,sort&compress]{natbib}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage{flushend}
+\newcommand{\keywordSeparator}{, }
+
+\articletype{Regular Paper}
+\received{Date Month Year}
+\revised{Date Month Year}
+\accepted{Date Month Year}
+\journal{Journal}
+\volume{00}
+\copyyear{2023}
+\startpage{1}
+\raggedbottom
+
+\begin{document}
+
+\title{Title}
+\titlemark{\input{../Content/title.tex}}
+
+\author[1,2,3]{San Zhang}
+\author[1,2]{Si Li}
+\author[1]{Wu Wang}
+\author[1]{Liu Zhao}
+\author[1]{Qi Sun}
+\authormark{Zhang S, Li S, Wang W, \textsc{et al.} }
+
+\address[1]{\orgdiv{Department/College/School/Faculty/Institute/... A}, \orgname{University A}, \orgaddress{\state{Street A}, \country{Country A}}}
+\address[2]{\orgdiv{Department/College/School/Faculty/Institute/... B}, \orgname{University B}, \orgaddress{\state{Street B}, \country{Country B}}}
+\address[3]{\orgdiv{Department/College/School/Faculty/Institute/... C}, \orgname{University C}, \orgaddress{\state{Street C}, \country{Country C}}}
+
+\corres{Corresponding authors: Liu Zhao and Qi Sun \email{liuzhao@gmail.com (Liu Zhao), qisun@gmail.com (Qi Sun)}}
+
+\abstract[Abstract]{\input{../Content/abstract.tex}}
+\keywords{\input{../Content/keyword.tex}}
+
+\jnlcitation{\cname{%
+\author{Taylor M.},
+\author{Lauritzen P},
+\author{Erath C}, and
+\author{Mittal R}}.
+\ctitle{On simplifying `incremental remap'-based transport schemes.} \cjournal{\it J Comput Phys.} \cvol{2021;00(00):1--18}.}
+
+\maketitle
+
+\renewcommand\thefootnote{}
+\footnotetext{San Zhang and Si Li are the co-first authors contributing equally to this work. }
+
+\renewcommand\thefootnote{\fnsymbol{footnote}}
+\setcounter{footnote}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{../Content/1.tex}
+\input{../Content/2.tex}
+\input{../Content/3.tex}
+\input{../Content/4.tex}
+\input{../Content/5.tex}
+\input{../Content/6.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliography{../Content/ref.bib}
+
+\end{document}

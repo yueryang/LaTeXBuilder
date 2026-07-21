@@ -1,0 +1,53 @@
+\documentclass[lettersize,journal]{IEEEtran}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{threeparttable}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage{flushend}
+\newcommand{\keywordSeparator}{; }
+
+\begin{document}
+
+\title{\input{../Content/title.tex}}
+
+\author{
+	San Zhang\textsuperscript{\#}\thanks{San Zhang was with the Department/College/School/Faculty/Institute/... A, University A, City A, Country/Region A; the Department/College/School/Faculty/Institute/... B, University B, City B, Country/Region B; and the Department/College/School/Faculty/Institute/... C, University C, City C, Country/Region C. }, 
+	Si Li\textsuperscript{\#}\thanks{Si Li was with the Department/College/School/Faculty/Institute/... A, University A, City A, Country/Region A and the Department/College/School/Faculty/Institute/... B, University B, City B, Country/Region B. }, 
+	Wu Wang\thanks{Wu Wang was with the Department/College/School/Faculty/Institute/... A, University A, City A, Country/Region A}, 
+	Liu Zhao*\thanks{Liu Zhao was with the Department/College/School/Faculty/Institute/... A, University A, City A, Country/Region A}, 
+	and Qi Sun*\thanks{Qi Sun was with the Department/College/School/Faculty/Institute/... A, University A, City A, Country/Region A}
+	\thanks{\textsuperscript{\#}San Zhang and Si Li are the co-first authors who contributed equally to this work. }
+	\thanks{*Liu Zhao (\protect\url{liuzhao@gmail.com}) and Qi Sun (\protect\url{qisun@gmail.com}) are the corresponding authors. }
+}
+
+\maketitle
+
+\begin{abstract}
+	\input{../Content/abstract.tex}
+\end{abstract}
+
+\begin{IEEEkeywords}
+	\input{../Content/keyword.tex}
+\end{IEEEkeywords}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{../Content/1.tex}
+\input{../Content/2.tex}
+\input{../Content/3.tex}
+\input{../Content/4.tex}
+\input{../Content/5.tex}
+\input{../Content/6.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{IEEEtran}
+\bibliography{../Content/ref.bib}
+
+\end{document}

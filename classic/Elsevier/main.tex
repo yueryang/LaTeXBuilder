@@ -1,0 +1,68 @@
+\documentclass[a4paper,fleqn]{cas-dc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{threeparttable}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage{flushend}
+\newcommand{\keywordSeparator}{ \sep}
+
+\begin{document}
+
+\title[mode=title]{\input{../Content/title.tex}}
+\shorttitle{Short Title of the Article}
+
+\author[1,2,3]{San Zhang}[orcid=0000-0000-0000-0003]\fnmark[1]
+\ead{sanzhang@gmail.com}
+
+\author[1,2]{Si Li}[orcid=0000-0000-0000-0004]\fnmark[1]
+\ead{sili@gmail.com}
+
+\author[1]{Wu Wang}[orcid=0000-0000-0000-0005]
+\ead{wuwang@gmail.com}
+
+\author[1]{Liu Zhao}[orcid=0000-0000-0000-0006]\cormark[1]
+\ead{liuzhao@gmail.com}
+
+\author[1]{Qi Sun}[orcid=0000-0000-0000-0007]\cormark[1]
+\ead{qisun@gmail.com}
+
+\address[1]{Department/College/School/Faculty/Institute/... A, University A, City A, Country/Region A}
+\address[2]{Department/College/School/Faculty/Institute/... B, University B, City B, Country/Region B}
+\address[3]{Department/College/School/Faculty/Institute/... C, University C, City C, Country/Region C}
+
+\nonumnote{* These are the corresponding authors. } % \nonumnote{* This is the corresponding author. } 
+\fntext[1]{Co-first authors contributed equally to this work. } % \fntext[1]{These authors contributed equally to this work. }
+
+\begin{abstract}
+	\ \input{../Content/abstract.tex}
+\end{abstract}
+
+\begin{keywords}
+	\input{../Content/keyword.tex}
+\end{keywords}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{../Content/1.tex}
+\input{../Content/2.tex}
+\input{../Content/3.tex}
+\input{../Content/4.tex}
+\input{../Content/5.tex}
+\input{../Content/6.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\printcredits
+
+\bibliographystyle{unsrt}
+\bibliography{../Content/ref.bib}
+
+\end{document}

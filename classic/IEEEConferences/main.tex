@@ -1,0 +1,93 @@
+\documentclass[conference,compsoc]{IEEEtran}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{threeparttable}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage{flushend}
+\newcommand{\keywordSeparator}{; }
+
+\makeatletter
+\newcommand{\linebreakand}{%
+	\end{@IEEEauthorhalign}
+	\hfill\mbox{}\par
+	\mbox{}\hfill\begin{@IEEEauthorhalign}
+}
+\makeatother
+
+\begin{document}
+
+\title{\input{../Content/title.tex}} % \title{\fontsize{12pt}{14.4pt}\selectfont \textbf{\input{../Content/title.tex}}}
+
+\author{
+	\IEEEauthorblockN{1\textsuperscript{st} San Zhang}
+	\IEEEauthorblockA{
+		\textit{Department/College/School/Faculty/Institute/... A} \\
+		\textit{University A} \\
+		City A, Country/Region A \\
+		\url{sanzhang@gmail.com}
+	}
+	\and
+	\IEEEauthorblockN{1\textsuperscript{st} Si Li}
+	\IEEEauthorblockA{
+		\textit{Department/College/School/Faculty/Institute/... B} \\
+		\textit{University B} \\
+		City B, Country/Region B \\
+		\url{sili@gmail.com}
+	}
+	\linebreakand
+	\IEEEauthorblockN{2\textsuperscript{nd} Wu Wang}
+	\IEEEauthorblockA{
+		\textit{Department/College/School/Faculty/Institute/... C} \\
+		\textit{University C} \\
+		City C, Country/Region C \\
+		\url{wuwang@e.ntu.edu.sg}
+	}
+	\and
+	\IEEEauthorblockN{3\textsuperscript{rd} Liu Zhao*}
+	\IEEEauthorblockA{
+		\textit{Department/College/School/Faculty/Institute/... D} \\
+		\textit{University D} \\
+		City D, Country/Region D \\
+		\url{liuzhao@gmail.com}
+	}
+	\linebreakand
+	\IEEEauthorblockN{4\textsuperscript{th} Qi Sun*\thanks{* These are the corresponding authors. }}
+	\IEEEauthorblockA{
+		\textit{Department/College/School/Faculty/Institute/... E} \\
+		\textit{University E} \\
+		City E, Country/Region E \\
+		\url{qisun@gmail.com}
+	}
+}
+
+\maketitle
+
+\begin{abstract}
+	\input{../Content/abstract.tex}
+\end{abstract}
+
+\begin{IEEEkeywords}
+	\input{../Content/keyword.tex}
+\end{IEEEkeywords}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{../Content/1.tex}
+\input{../Content/2.tex}
+\input{../Content/3.tex}
+\input{../Content/4.tex}
+\input{../Content/5.tex}
+\input{../Content/6.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{IEEEtran}
+\bibliography{../Content/ref.bib}
+
+\end{document}

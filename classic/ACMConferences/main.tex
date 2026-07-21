@@ -1,0 +1,114 @@
+\documentclass[sigconf]{acmart}
+%\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+%\usepackage[numbers,sort&compress]{natbib}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage{flushend}
+\newcommand{\keywordSeparator}{, }
+
+\AtBeginDocument{%
+	\providecommand\BibTeX{%
+		{%
+			Bib\TeX
+		}
+	}
+}
+\setcopyright{acmlicensed}
+\copyrightyear{2018}
+\acmYear{2018}
+\acmDOI{XXXXXXX.XXXXXXX}
+\acmConference[Conference acronym 'XX]{Make sure to enter the correct conference title from your rights confirmation email}{June 03--05, 2018}{Woodstock, NY}
+\acmISBN{978-1-4503-XXXX-X/18/06}
+
+\begin{document}
+
+\title{\input{../Content/title.tex}}
+
+\author{San Zhang\textsuperscript{\#}}
+\affiliation{%
+	\institution{Department/College/School/Faculty/\\Institute/... A, University A}
+	\streetaddress{Street A}
+	\city{City A}
+	\country{Country/Region A}
+}
+\email{sanzhang@gmail.com}
+\orcid{0000-0000-0000-0003}
+
+\author{Si Li\textsuperscript{\#}}
+\affiliation{%
+	\institution{Department/College/School/Faculty/\\Institute/... B, University B}
+	\streetaddress{Street B}
+	\city{City B}
+	\country{Country/Region B}
+}
+\email{sili@gmail.com}
+\orcid{0000-0000-0000-0004}
+
+\author{Wu Wang}
+\affiliation{%
+	\institution{Department/College/School/Faculty/\\Institute/... C, University C}
+	\streetaddress{Street C}
+	\city{City C}
+	\country{Country/Region C}
+}
+\email{wuwang@gmail.com}
+\orcid{0000-0000-0000-0005}
+
+\author{Liu Zhao*}
+\affiliation{%
+	\institution{Department/College/School/Faculty/\\Institute/... D, University D}
+	\streetaddress{Street D}
+	\city{City D}
+	\country{Country/Region D}
+}
+\email{liuzhao@gmail.com}
+\orcid{0000-0000-0000-0006}
+
+\author{Qi Sun*}
+\affiliation{%
+	\institution{Department/College/School/Faculty/\\Institute/... E, University E}
+	\streetaddress{Street E}
+	\city{City E}
+	\country{Country/Region E}
+}
+\email{qisun@gmail.com}
+\orcid{0000-0000-0000-0007}
+
+\renewcommand{\shortauthors}{Zhang S, Li S, Wang W, et al. }
+
+\begin{abstract}
+	\input{../Content/abstract.tex}
+\end{abstract}
+
+\keywords{\input{../Content/keyword.tex}}
+
+\received{3 November 2024}
+\received[revised]{26 November 2024}
+\received[accepted]{10 February 2025}
+
+\maketitle
+
+\renewcommand{\thefootnote}{}
+\footnotetext{* Theses are the corresponding authors. }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{../Content/1.tex}
+\input{../Content/2.tex}
+\input{../Content/3.tex}
+\input{../Content/4.tex}
+\input{../Content/5.tex}
+\input{../Content/6.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{../Content/ref.bib}
+
+\end{document}
+\endinput
