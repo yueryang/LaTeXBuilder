@@ -1,0 +1,208 @@
+{
+	"abstract": [
+		{
+			"encoding": "utf-8",
+			"path": "sources/tex/abstract.tex",
+			"type": "file"
+		}
+	],
+	"authors": [
+		{
+			"CA": false,
+			"FA": true,
+			"ORCID": "0000-0000-0000-0003",
+			"affiliations": [
+				"Affiliation A",
+				"Affiliation B",
+				"Affiliation C"
+			],
+			"email": "sanzhang@gmail.com",
+			"name": "San Zhang"
+		},
+		{
+			"CA": false,
+			"FA": true,
+			"ORCID": "0000-0000-0000-0004",
+			"affiliations": [
+				"Affiliation A",
+				"Affiliation B"
+			],
+			"email": "sili@gmail.com",
+			"name": "Si Li"
+		},
+		{
+			"CA": false,
+			"FA": false,
+			"ORCID": "0000-0000-0000-0005",
+			"affiliations": [
+				"Affiliation A"
+			],
+			"email": "wuwang@gmail.com",
+			"name": "Wu Wang"
+		},
+		{
+			"CA": true,
+			"FA": false,
+			"ORCID": "0000-0000-0000-0006",
+			"affiliations": [
+				"Affiliation A"
+			],
+			"email": "liuzhao@gmail.com",
+			"name": "Liu Zhao"
+		},
+		{
+			"CA": true,
+			"FA": false,
+			"ORCID": "0000-0000-0000-0007",
+			"affiliations": [
+				"Affiliation A"
+			],
+			"email": "qisun@gmail.com",
+			"name": "Qi Sun"
+		}
+	],
+	"bib": [
+		{
+			"path": "sources/bib",
+			"type": "directory"
+		}
+	],
+	"encoding": "utf-8",
+	"figures": [
+		{
+			"path": "sources/figures",
+			"type": "directory"
+		}
+	],
+	"keywords": [
+		"LaTeX",
+		"Typesetting",
+		"Acceptance"
+	],
+	"packages": [
+		"\\usepackage{amsmath, amssymb, amsfonts}",
+		"\\usepackage{bm}",
+		"\\usepackage{xcolor}",
+		"\\usepackage{graphicx}",
+		"\\usepackage{enumitem}",
+		"\\usepackage{booktabs}",
+		"\\usepackage{multirow}",
+		"\\usepackage{threeparttable}",
+		"\\usepackage{algorithm}",
+		"\\usepackage{algpseudocode}",
+		"\\usepackage[numbers,sort&compress]{natbib}",
+		"\\usepackage{xurl}",
+		"\\usepackage{flushend}"
+	],
+	"targets": [
+		{
+			"output": {
+				"encoding": "utf-8",
+				"path": "targets/ACMConferences/main.tex",
+				"type": "file"
+			},
+			"template": {
+				"category": "Conferences",
+				"name": "ACM"
+			}
+		},
+		{
+			"output": {
+				"encoding": "utf-8",
+				"path": "targets/Elsevier/main.tex",
+				"type": "file"
+			},
+			"template": {
+				"category": "Publisher",
+				"name": "Elsevier"
+			}
+		},
+		{
+			"output": {
+				"encoding": "utf-8",
+				"path": "targets/IEEEConferences/main.tex",
+				"type": "file"
+			},
+			"template": {
+				"category": "Conferences",
+				"name": "IEEE"
+			}
+		},
+		{
+			"output": {
+				"encoding": "utf-8",
+				"path": "targets/IEEEJournals/main.tex",
+				"type": "file"
+			},
+			"template": {
+				"category": "Journals",
+				"name": "IEEE"
+			}
+		},
+		{
+			"output": {
+				"encoding": "utf-8",
+				"path": "targets/MDPI/main.tex",
+				"type": "file"
+			},
+			"template": {
+				"category": "Publisher",
+				"name": "MDPI"
+			}
+		},
+		{
+			"output": {
+				"encoding": "utf-8",
+				"path": "targets/Nature/main.tex",
+				"type": "file"
+			},
+			"template": {
+				"category": "Publisher",
+				"name": "Nature"
+			}
+		},
+		{
+			"output": {
+				"encoding": "utf-8",
+				"path": "targets/Springer/main.tex",
+				"type": "file"
+			},
+			"template": {
+				"category": "Publisher",
+				"name": "Springer"
+			}
+		},
+		{
+			"output": {
+				"encoding": "utf-8",
+				"path": "targets/TSP/main.tex",
+				"type": "file"
+			},
+			"template": {
+				"category": "Publisher",
+				"name": "TSP"
+			}
+		},
+		{
+			"output": {
+				"encoding": "utf-8",
+				"path": "targets/Wiley/main.tex",
+				"type": "file"
+			},
+			"template": {
+				"category": "Publisher",
+				"name": "Wiley"
+			}
+		}
+	],
+	"tex": [
+		{
+			"encoding": "utf-8",
+			"filter": "^\\d\\.tex$",
+			"path": "sources/tex",
+			"type": "directory"
+		}
+	],
+	"title": "Title",
+	"version": 20260718
+}
