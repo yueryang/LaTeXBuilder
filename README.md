@@ -1,4 +1,4 @@
-# oneManuscriptMultipleFormats
+# LaTeXBuilder
 
 This repository enables easy generation of multiple formats for a single manuscript using templates collected from various publishers. 
 
@@ -398,7 +398,7 @@ In these situations, we would appreciate it if reviewers could ask the authors f
 
 ---
 
-# 一手稿多排版（一稿多版）
+# LaTeXBuilder
 
 本存储库搜集了来自不同出版社的模板，可以轻松为同一份手稿生成多种排版格式。
 
@@ -407,7 +407,7 @@ LaTeX 最初的设计理念是将内容与格式分离，从而简化排版。
 尤其是多次修稿导致在不同模板中零散地进行内容更新时，将所有更新合并到目标模板会令人恼火。
 因此，我们设计了这个存储库，旨在通过 LaTeX 和 Python 进一步分离内容和格式。
 
-本存储库中的所有 TEX 代码遵循 LaTeX 缩进，纯属笔者本人的偏好，使用时读者可以随意在等效的情况下进行调整和优化。
+本存储库中的所有 TEX 代码遵循 LaTeX 缩进，纯属本人的偏好，使用时读者可以随意在等效的情况下进行调整和优化。
 要追踪您的 LaTeX，请参阅 [LaTeXChecker](https://github.com/yueryang/LaTeXChecker)。
 
 请在投稿前仔细检查您的手稿，我们对因使用本存储库而产生的任何直接或间接损失不承担任何责任。
@@ -433,9 +433,9 @@ LaTeX 最初的设计理念是将内容与格式分离，从而简化排版。
 
 本存储库以张三李四王五赵六孙七等举例，邮箱和 ORCID 也是依照名字编的例子。
 除非单位未提供邮箱或单位的邮箱收发系统很差（例如经常丢失邮件、不会通知或连最基本的自动回复功能都没有），否则邮箱一般使用单位邮箱，这里先使用 gmail 替代着。
-如果指向了真实存在的邮箱和 ORCID，恳请联系笔者修正。
+如果指向了真实存在的邮箱和 ORCID，恳请联系我们笔者。
 
-此外，最近在网络上看到部分作者认为十字架符号表示已故的作者，但在笔者印象中确实存在一些期刊或会议使用十字架符号来标记共同第一作者，而且 IEEE 期刊模板中直接 ``\IEEEauthorrefmark{2}`` 出来的就是十字架符号。
+此外，我们在网络上看到部分作者认为十字架符号表示已故的作者，但在我们笔者中确实存在一些期刊或会议使用十字架符号来标记共同第一作者，而且 IEEE 期刊模板中直接 ``\IEEEauthorrefmark{2}`` 出来的就是十字架符号。
 后来问了下图书馆的老师，用井号标记共一的最多，十字架符号次之。若要表示作者已故，使用框框框住名字，而不是标十字架。
 个人总结了下，标记共同第一作者的符号建议是：Elsevier 模板，遵循模板指引，不需要自己指定符号；IEEE 会议模板，直接 1st 或者用十字架符号；IEEE 期刊模板，用十字架符号；其它模板，用井号。
 如果记性不好或希望完全避免误会，可统一使用井号（代码为 ``\#``）来标记共一（Elsevier 模板和允许 1st 的 IEEE 会议模板除外）。
