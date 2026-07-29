@@ -53,13 +53,17 @@ Our summary of recommended symbols for marking co-first authors is as follows:
 If you have a bad memory or want to completely avoid misunderstandings, you can consistently use the hash symbol (code: ``\#``) to mark co-first authors, 
 except for Elsevier templates and IEEE conference templates that allow "1st". 
 
+As it is too hard to use pure LaTeX to totally implement multiple typesetting styles for a single manuscript since some special templates require the above particular adjustments, 
+we have designed a Python script to dynamically build (generate and compile) multiple typesetting styles for a single manuscript. 
+Please consider using ``flat/build.py`` via ``python build.py metadata.json``, where ``metadata.json`` should be the target metadata JSON file that needs to be processed. 
+
 ### Content
 
 Please write your paper title, abstract, keywords, content, and references here. 
 
 Please note that it is required to **specifically change the title in the Springer and the Wiley templates** while modifying the ``./Content/title.tex`` file. 
 
-### Figure
+### Figure(s)
 
 Please include your figures (with their corresponding sources like ``.pptx`` if you wish to) here. It is highly recommended to use figures in the PDF format and vector graphics recognized by ``\includegraphics``. 
 
@@ -439,6 +443,10 @@ LaTeX 最初的设计理念是将内容与格式分离，从而简化排版。
 后来问了下图书馆的老师，用井号标记共一的最多，十字架符号次之。若要表示作者已故，使用框框框住名字，而不是标十字架。
 个人总结了下，标记共同第一作者的符号建议是：Elsevier 模板，遵循模板指引，不需要自己指定符号；IEEE 会议模板，直接 1st 或者用十字架符号；IEEE 期刊模板，用十字架符号；其它模板，用井号。
 如果记性不好或希望完全避免误会，可统一使用井号（代码为 ``\#``）来标记共一（Elsevier 模板和允许 1st 的 IEEE 会议模板除外）。
+
+由于纯 LaTeX 难以实现单个稿件的多种排版样式（某些特殊模板需要进行上述的特定调整），
+我们设计了一个 Python 脚本来动态构建（生成和编译）单个稿件的多种排版样式。
+请考虑使用 ``flat/build.py``，并通过 ``python build.py metadata.json`` 来运行，其中 ``metadata.json`` 是需要处理的目标元数据 JSON 文件。
 
 ### 内容
 
