@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{liu2024efficient}
+Liu, Y., Li, Y., Tang, J., Ji, T., Xu, X., Luo, Y., Lin, Y., Yang, Y., Wu, Y.:
+  An efficient information retrieval and tracking algorithm for multiple
+  typesetting styles of the same paper. In: 2024 7th International Conference
+  on Data Science and Information Technology (DSIT). pp.~1--6. IEEE (2024)
+
+\bibitem{yang2026builder}
+Yang, Y.: Title. \url{https://github.com/yueryang/LaTeXBuilder} (2025),
+  accessed: 2026-07-21
+
+\bibitem{yang2025checker}
+Yang, Y., Lin, Y.: Title. \url{https://github.com/yueryang/LaTeXChecker}
+  (2025), accessed: 2025-02-10
+
+\end{thebibliography}

@@ -1,0 +1,66 @@
+name: Build
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - flat
+  push:
+    branches:
+      - main
+    paths:
+      - flat
+  workflow_dispatch:
+    inputs:
+      pythonVersion:
+        description: 'Python version'
+        required: true
+        default: '3.x'
+        type: choice
+        options:
+          - '3.x'
+          - '3.12'
+          - '3.13'
+          - '3.14'
+          - '3.15'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          sparse-checkout: |
+            flat
+      
+      - name: Set up Python ${{ github.event.inputs.pythonVersion || '3.x' }}
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ github.event.inputs.pythonVersion || '3.x' }}
+      
+      - name: Build
+        run: |
+          cd "${{ github.workspace }}/flat"
+          echo "The current working directory is \"$(pwd)\". "
+          if [[ -f "build.py" && -f "templates.py" && -f "metadata.json" ]];
+          then
+            echo "\$ python build.py \"metadata.json\""
+            python build.py metadata.json
+          else
+            echo "Could not execute the builder \"build.py\" via Python ${{ github.event.inputs.pythonVersion || '3.x' }}. "
+            tree
+          fi
+      
+      - name: Upload the artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: targets
+          path: |
+            flat/targets/*.tex
+            flat/targets/*.pdf
+          if-no-files-found: error

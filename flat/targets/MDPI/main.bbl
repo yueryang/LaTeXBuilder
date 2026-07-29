@@ -1,0 +1,23 @@
+\begin{thebibliography}{999}
+
+\bibitem[Liu et~al.(2024)Liu, Li, Tang, Ji, Xu, Luo, Lin, Yang, and
+  Wu]{liu2024efficient}
+Liu, Y.; Li, Y.; Tang, J.; Ji, T.; Xu, X.; Luo, Y.; Lin, Y.; Yang, Y.; Wu, Y.
+\newblock An efficient information retrieval and tracking algorithm for
+  multiple typesetting styles of the same paper.
+\newblock In Proceedings of the 2024 7th International Conference on Data
+  Science and Information Technology (DSIT). IEEE,  2024, pp. 1--6.
+
+\bibitem[Yang(2025)]{yang2026builder}
+Yang, Y.
+\newblock Title.
+\newblock \url{https://github.com/yueryang/LaTeXBuilder},  2025.
+\newblock Accessed: 2026-07-21.
+
+\bibitem[Yang and Lin(2025)]{yang2025checker}
+Yang, Y.; Lin, Y.
+\newblock Title.
+\newblock \url{https://github.com/yueryang/LaTeXChecker},  2025.
+\newblock Accessed: 2025-02-10.
+
+\end{thebibliography}

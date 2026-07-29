@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99e (TeX Live 2026)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: Definitions/vancouver.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: ref.bib
+Warning--empty author and editor in yang2026builder
+Warning--missing publisher in yang2026builder
+Warning--empty author and editor in yang2025checker
+Warning--missing publisher in yang2025checker
+You've used 3 entries,
+            3507 wiz_defined-function locations,
+            704 strings with 5304 characters,
+and the built_in function-call counts, 3645 in all, are:
+= -- 388
+> -- 43
+< -- 11
++ -- 21
+- -- 11
+* -- 279
+:= -- 438
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 4
+chr.to.int$ -- 20
+cite$ -- 7
+duplicate$ -- 230
+empty$ -- 357
+format.name$ -- 12
+if$ -- 839
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 28
+newline$ -- 18
+num.names$ -- 3
+pop$ -- 69
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 67
+stack$ -- 0
+substring$ -- 635
+swap$ -- 73
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 24
+width$ -- 4
+write$ -- 36
+(There were 4 warnings)

@@ -1,11 +1,16 @@
 from os import chdir, linesep, makedirs, sep, walk
-from os.path import abspath, basename, dirname, isdir, isfile, islink, join, relpath, split, splitext
+from os.path import abspath, basename, dirname, isabs, isdir, isfile, islink, join, relpath, split, splitext
 from shutil import copy, copytree
 from sys import argv, exit
 from base64 import b64decode, urlsafe_b64decode
 from json import loads
 from re import search
 from subprocess import TimeoutExpired, run
+try:
+	from tqdm import tqdm
+except:
+	def tqdm(x:object, *args:tuple, **kwargs:dict) -> object:
+		return x
 EXIT_SUCCESS = 0
 EXIT_FAILURE = 1
 EOF = (-1)
@@ -39,6 +44,31 @@ class Builder:
 	__Engines = ("tex", "latex", "luatex", "lualatex", "ptex", "platex", "pdftex", "pdflatex", "uptex", "uplatex", "xetex", "xelatex")
 	__DefaultEngine = "pdflatex"
 	__DefaultCompilationTimeout = 10
+	__ClassicTemplateDirectoryNames = {
+		"ACM.Conferences":"ACMConferences",
+		"Elsevier.Publisher":"Elsevier",
+		"IEEE.Conferences":"IEEEConferences",
+		"IEEE.Journals":"IEEEJournals",
+		"MDPI.Publisher":"MDPI",
+		"Nature.Publisher":"Nature",
+		"Springer.Publisher":"Springer",
+		"TSP.Publisher":"TSP",
+		"Wiley.Publisher":"Wiley"
+	}
+	@staticmethod
+	def __copyTemplateResources(identifier:str, targetDirectoryPath:str) -> None:
+		classicTemplateDirectoryName = Builder.__ClassicTemplateDirectoryNames.get(identifier)
+		if classicTemplateDirectoryName:
+			classicTemplateDirectoryPath = join(
+				dirname(dirname(abspath(__file__))), "classic", classicTemplateDirectoryName
+			)
+			if isdir(classicTemplateDirectoryPath):
+				copytree(
+					classicTemplateDirectoryPath, targetDirectoryPath, dirs_exist_ok = True, 
+					ignore = lambda directoryPath, names: [
+						name for name in names if name == "main" or name.startswith("main.")
+					]
+				)
 	def __init__(self:object, metadataFilePath:str = __DefaultMetadataFilePath) -> object:
 		try:
 			self.__metadataFilePath = str(metadataFilePath)
@@ -50,7 +80,8 @@ class Builder:
 			if Builder.__Templates is None:
 				Builder.__Templates = __import__("templates").Templates
 			dictionary = JSONLoader.load(self.__metadataFilePath)
-			for target in dictionary["targets"]:
+			baseDirectoryPath = dirname(abspath(self.__metadataFilePath))
+			for target in tqdm(dictionary["targets"]):
 				if (
 					isinstance(target, dict) and "output" in target and "template" in target and isinstance(target["output"], dict)
 					and "path" in target["output"] and isinstance(target["output"]["path"], str)
@@ -64,20 +95,26 @@ class Builder:
 					else:
 						try:
 							# Generate #
-							targetFilePath = join(target["output"]["path"], Builder.__DefaultTargetFileName) if (
-								target["output"]["path"].endswith((sep, "/")) or target["output"].get("type", "file") == "directory"
-							) else target["output"]["path"]
+							targetOutputPath = target["output"]["path"] if isabs(target["output"]["path"]) else join(
+								baseDirectoryPath, target["output"]["path"]
+							)
+							targetFilePath = join(targetOutputPath, Builder.__DefaultTargetFileName) if (
+								targetOutputPath.endswith((sep, "/")) or target["output"].get("type", "file") == "directory"
+							) else targetOutputPath
 							targetDirectoryPath, targetFileName = split(targetFilePath)
 							if targetDirectoryPath:
 								makedirs(targetDirectoryPath, exist_ok = True)
+							Builder.__copyTemplateResources(identifier, targetDirectoryPath)
 							encoding = target["output"].get("encoding", Builder.__DefaultEncoding)
 							newline = {"cr":"\r", "crlf":"\r\n", "lf":"\n", "macintosh":"\r", "unix":"\n", "windows":"\r\n"}.get(
 								target["output"].get("newline", "auto").lower(), linesep
+								)
+							generatedFiles = getattr(getattr(Builder.__Templates, target["template"]["name"]), target["template"]["category"]).format(
+								baseDirectoryPath, targetFileName, abstract = dictionary.get("abstract"), authors = dictionary.get("authors"), 
+								bib = dictionary.get("bib"), keywords = dictionary.get("keywords"), packages = dictionary.get("packages"), 
+								tex = dictionary.get("tex"), title = dictionary.get("title")
 							)
-							for key, value in getattr(getattr(Builder.__Templates, target["template"]["name"]), target["template"]["category"]).format(
-								dirname(self.__metadataFilePath), targetFileName, abstract = dictionary.get("abstract"), authors = dictionary.get("authors"), 
-								keywords = dictionary.get("keywords"), packages = dictionary.get("packages"), tex = dictionary.get("tex"), title = dictionary.get("title")
-							).items():
+							for key, value in generatedFiles.items():
 								with open(join(targetDirectoryPath, key), "w", encoding = encoding, newline = "") as f:
 									f.write(newline.join(value) if isinstance(value, (tuple, list)) else str(value))
 							
@@ -104,10 +141,12 @@ class Builder:
 												f.write((urlsafe_b64decode if '-' in base64String or '_' in base64String else b64decode)(base64String))
 									elif figure["type"] == "directory":
 										if "path" in figure and isinstance(figure["path"], str):
-											copytree(figure["path"], targetDirectoryPath, dirs_exist_ok = True)
+											figurePath = figure["path"] if isabs(figure["path"]) else join(baseDirectoryPath, figure["path"])
+											copytree(figurePath, targetDirectoryPath, dirs_exist_ok = True)
 									elif figure["type"] == "file":
 										if "path" in figure and isinstance(figure["path"], str):
-											copy(figure["path"], join(targetDirectoryPath, ""))
+											figurePath = figure["path"] if isabs(figure["path"]) else join(baseDirectoryPath, figure["path"])
+											copy(figurePath, join(targetDirectoryPath, ""))
 							
 							# Compile #
 							engine = Builder.__DefaultEngine
@@ -115,24 +154,30 @@ class Builder:
 								engine = target["template"]["engine"]
 								if engine not in Builder.__Engines:
 									engine = Builder.__DefaultEngine
-							result = run(
-								(engine, targetFileName), capture_output = True, text = True, 
-								timeout = Builder.__DefaultCompilationTimeout, cwd = targetDirectoryPath
-							)
-							if EXIT_SUCCESS == result.returncode:
-								diagnostics["succeeded"].append(identifier)
+							compilationCommands = [(engine, targetFileName)]
+							if any(splitext(fileName)[1].lower() == ".bib" for fileName in generatedFiles):
+								compilationCommands.append(("bibtex", splitext(targetFileName)[0]))
+							compilationCommands.extend([(engine, targetFileName), (engine, targetFileName)])
+							for compilationCommand in compilationCommands:
+								result = run(
+									compilationCommand, capture_output = True, text = True, 
+									timeout = Builder.__DefaultCompilationTimeout, cwd = targetDirectoryPath
+								)
+								if EXIT_SUCCESS != result.returncode:
+									diagnostics["failed"][identifier] = result
+									break
 							else:
-								diagnostics["failed"][identifier] = result
+								diagnostics["succeeded"].append(identifier)
 						except TimeoutExpired as innerBaseException:
 							diagnostics["failed"][identifier] = {
 								"cmd":innerBaseException.cmd, "stderr":innerBaseException.stderr, 
 								"stdout":innerBaseException.stdout, "timeout":innerBaseException.timeout
 							}
-						#except BaseException as innerBaseException:#########
-						#	diagnostics["failed"][identifier] = innerBaseException
+						except BaseException as innerBaseException:
+							diagnostics["failed"][identifier] = innerBaseException
 				else:
 					diagnostics["mismatched"] += 1
-		except KeyError as outerBaseException:#####
+		except BaseException as outerBaseException:
 			diagnostics["aborted"] = outerBaseException
 		return diagnostics
 
@@ -140,6 +185,12 @@ class Builders:
 	def __init__(self:object) -> object:
 		self.__filePaths = []
 		self.__builders = []
+	@staticmethod
+	def __getPortableFilePath(path:str) -> str:
+		try:
+			return relpath(path)
+		except ValueError:
+			return abspath(path)
 	def updateFilePaths(self:object, *paths:tuple) -> int:
 		originalLength, stack = len(self.__builders), list(reversed(paths))
 		while stack:
@@ -154,7 +205,7 @@ class Builders:
 						filePaths = []
 						for root, directoryNames, fileNames in walk(element):
 							for fileName in fileNames:
-								relativeFilePath = relpath(join(root, fileName))
+								relativeFilePath = Builders.__getPortableFilePath(join(root, fileName))
 								if (
 									not islink(relativeFilePath) and isfile(relativeFilePath)
 									and splitext(fileName)[1].lower() == ".json"
@@ -167,7 +218,7 @@ class Builders:
 					elif isfile(element):
 						fileName = basename(element)
 						if splitext(fileName)[1] == ".json":
-							relativeFilePath = relpath(element)
+							relativeFilePath = Builders.__getPortableFilePath(element)
 							if relativeFilePath not in self.__filePaths:
 								self.__filePaths.append(relativeFilePath)
 		for filePath in self.__filePaths[originalLength:]:

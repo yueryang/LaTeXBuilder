@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.18)  29 JUL 2026 02:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.18)  30 JUL 2026 01:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -934,132 +934,12 @@ Package hyperref Warning: Ignoring empty anchor on input line 51.
 Package hyperref Warning: Ignoring empty anchor on input line 51.
 
 
-Package natbib Warning: Citation `liu2024efficient' on page 1 undefined on inpu
-t line 56.
-
-
-Package natbib Warning: Citation `yang2026builder' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `yang2025checker' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `liu2024efficient' on page 1 undefined on inpu
-t line 56.
-
-
-Package natbib Warning: Citation `yang2026builder' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `yang2025checker' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `liu2024efficient' on page 1 undefined on inpu
-t line 56.
-
-
-Package natbib Warning: Citation `yang2026builder' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `yang2025checker' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `liu2024efficient' on page 1 undefined on inpu
-t line 56.
-
-
-Package natbib Warning: Citation `yang2026builder' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `yang2025checker' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `liu2024efficient' on page 1 undefined on inpu
-t line 56.
-
-
-Package natbib Warning: Citation `yang2026builder' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `yang2025checker' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `liu2024efficient' on page 1 undefined on inpu
-t line 56.
-
-
-Package natbib Warning: Citation `yang2026builder' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `yang2025checker' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `liu2024efficient' on page 1 undefined on inpu
-t line 56.
-
-
-Package natbib Warning: Citation `yang2026builder' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `yang2025checker' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `liu2024efficient' on page 1 undefined on inpu
-t line 56.
-
-
-Package natbib Warning: Citation `yang2026builder' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `yang2025checker' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `liu2024efficient' on page 1 undefined on inpu
-t line 56.
-
-
-Package natbib Warning: Citation `yang2026builder' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `yang2025checker' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `liu2024efficient' on page 1 undefined on inpu
-t line 56.
-
-
-Package natbib Warning: Citation `yang2026builder' on page 1 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `yang2025checker' on page 1 undefined on input
- line 56.
-
-
 Overfull \hbox (1.21223pt too wide) in paragraph at lines 73--74
 \T1/stix/m/n/10 These are the ex-per-i-ments. These are the ex-per-i-ments. The
 se
  []
 
-<tree.pdf, id=43, 1378.14874pt x 693.59125pt>
+<tree.pdf, id=63, 1378.14874pt x 693.59125pt>
 File: tree.pdf Graphic file (type pdf)
 <use tree.pdf>
 Package pdftex.def Info: tree.pdf  used on input line 85.
@@ -1068,68 +948,53 @@ Package pdftex.def Info: tree.pdf  used on input line 85.
 6/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}
 
 
-{d:/texlive/2026/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc} <d:/texliv
-e/2026/texmf-dist/tex/latex/els-cas-templates/thumbnails/cas-email.jpeg>]
+{d:/texlive/2026/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc} <./thumbna
+ils/cas-email.jpeg>]
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 (Font)              scaled to size 8.50006pt on input line 103.
-
-
-Package natbib Warning: There were undefined citations.
-
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
-[leftcolumn badness]: 1000000 on 20.35999pt
-[rightcolumn badness]: 1000000 on 20.35999pt
+ (./main.bbl)
+[leftcolumn badness]: 1000000 on 52.28798pt
+[rightcolumn badness]: 1000000 on 52.28798pt
+[leftcolumn badness]: 1000000 on 52.28798pt
+[rightcolumn badness]: 1000000 on 52.28798pt
+[leftcolumn badness]: 1000000 on 52.28798pt
+[rightcolumn badness]: 1000000 on 52.28798pt
+[leftcolumn badness]: 1000000 on 52.28798pt
+[rightcolumn badness]: 1000000 on 52.28798pt
+[leftcolumn badness]: 1000000 on 52.28798pt
+[rightcolumn badness]: 1000000 on 52.28798pt
+[leftcolumn badness]: 1000000 on 52.28798pt
+[rightcolumn badness]: 1000000 on 52.28798pt
+[leftcolumn badness]: 1000000 on 52.28798pt
+[rightcolumn badness]: 1000000 on 52.28798pt
+[leftcolumn badness]: 1000000 on 52.28798pt
+[rightcolumn badness]: 1000000 on 52.28798pt
+[leftcolumn badness]: 1000000 on 52.28798pt
+[rightcolumn badness]: 1000000 on 52.28798pt
+[leftcolumn badness]: 1000000 on 52.28798pt
+[rightcolumn badness]: 1000000 on 52.28798pt
+[leftcolumn badness]: 1000000 on 52.28798pt
+[rightcolumn badness]: 1000000 on 52.28798pt
+[leftcolumn badness]: 1000000 on 52.28798pt
+[rightcolumn badness]: 1000000 on 52.28798pt
 - LAST -
-Extra skip:74.0pt
-Left:219.15999pt/2.18pt
-Right:147.33998pt/0.0pt
-Split: 210.33998pt
-Output:210.33998pt
+Extra skip:49.87201pt
+Left:278.33998pt/2.15999pt
+Right:229.49997pt/1.12799pt
+Split: 266.91997pt
+Output:266.91997pt
 Pageshrink: 0.0pt
 Pagestretch: 0.0pt
 @colht:407.45107pt
-FLUSHEND [output]: 210.33998pt
-FLUSHEND [leftcolumn badness]: 94
-FUSHEND [rightcolumn badness]: 10000
+FLUSHEND [output]: 266.91997pt
+FLUSHEND [leftcolumn badness]: 86
+FUSHEND [rightcolumn badness]: 5231
 [2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.127 \end{document}
+l.130 \end{document}
                      <./tree.pdf>] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
@@ -1139,22 +1004,22 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F4664B9F82B9415B67E743792A0898B0;924.
  ) 
 Here is how much of TeX's memory you used:
- 17881 strings out of 467525
- 266769 string characters out of 5423209
- 696893 words of memory out of 5000000
- 46466 multiletter control sequences out of 15000+600000
- 717322 words of font info for 149 fonts, out of 8000000 for 9000
+ 17902 strings out of 467525
+ 267203 string characters out of 5423209
+ 697938 words of memory out of 5000000
+ 46480 multiletter control sequences out of 15000+600000
+ 714593 words of font info for 148 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,8n,98p,1198b,485s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,8n,98p,1189b,485s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2026/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.p
 fb><d:/texlive/2026/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb><d:
 /texlive/2026/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb><d:/tex
 live/2026/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb><d:/texliv
 e/2026/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb>
-Output written on main.pdf (2 pages, 179397 bytes).
+Output written on main.pdf (2 pages, 183930 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
+ 141 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
  75 words of extra memory for PDF output out of 10000 (max. 10000000)
 

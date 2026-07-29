@@ -1,0 +1,77 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{3}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Liu et~al\mbox{.}(2024)]%
+        {liu2024efficient}
+\bibfield{author}{\bibinfo{person}{Yingying Liu}, \bibinfo{person}{Yuan Li},
+  \bibinfo{person}{Jiyue Tang}, \bibinfo{person}{Tong Ji},
+  \bibinfo{person}{Xiaoyu Xu}, \bibinfo{person}{Yuxin Luo},
+  \bibinfo{person}{Yifeng Lin}, \bibinfo{person}{Yuer Yang}, {and}
+  \bibinfo{person}{Yubing Wu}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{An efficient information retrieval and tracking
+  algorithm for multiple typesetting styles of the same paper}. In
+  \bibinfo{booktitle}{\emph{2024 7th International Conference on Data Science
+  and Information Technology (DSIT)}}. IEEE, \bibinfo{pages}{1--6}.
+\newblock
+
+
+\bibitem[Yang(2025)]%
+        {yang2026builder}
+\bibfield{author}{\bibinfo{person}{Yuer Yang}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Title}.
+\newblock
+  \bibinfo{howpublished}{\url{https://github.com/yueryang/LaTeXBuilder}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-07-21}.
+
+
+\bibitem[Yang and Lin(2025)]%
+        {yang2025checker}
+\bibfield{author}{\bibinfo{person}{Yuer Yang} {and} \bibinfo{person}{Yifeng
+  Lin}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Title}.
+\newblock
+  \bibinfo{howpublished}{\url{https://github.com/yueryang/LaTeXChecker}}.
+\newblock
+\newblock
+\shownote{Accessed: 2025-02-10}.
+
+
+\end{thebibliography}

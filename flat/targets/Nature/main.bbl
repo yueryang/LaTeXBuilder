@@ -1,0 +1,34 @@
+\begin{thebibliography}{1}
+\urlstyle{rm}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname doiprefix\endcsname\relax\def\doiprefix{DOI: }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{liu2024efficient}
+\bibinfo{author}{Liu, Y.} \emph{et~al.}
+\newblock \bibinfo{title}{An efficient information retrieval and tracking
+  algorithm for multiple typesetting styles of the same paper}.
+\newblock In \emph{\bibinfo{booktitle}{2024 7th International Conference on
+  Data Science and Information Technology (DSIT)}}, \bibinfo{pages}{1--6}
+  (\bibinfo{organization}{IEEE}, \bibinfo{year}{2024}).
+
+\bibitem{yang2026builder}
+\bibinfo{author}{Yang, Y.}
+\newblock \bibinfo{title}{Title}.
+\newblock
+  \bibinfo{howpublished}{\url{https://github.com/yueryang/LaTeXBuilder}}
+  (\bibinfo{year}{2025}).
+\newblock \bibinfo{note}{Accessed: 2026-07-21}.
+
+\bibitem{yang2025checker}
+\bibinfo{author}{Yang, Y.} \& \bibinfo{author}{Lin, Y.}
+\newblock \bibinfo{title}{Title}.
+\newblock
+  \bibinfo{howpublished}{\url{https://github.com/yueryang/LaTeXChecker}}
+  (\bibinfo{year}{2025}).
+\newblock \bibinfo{note}{Accessed: 2025-02-10}.
+
+\end{thebibliography}
