@@ -64,7 +64,5 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: targets
-          path: |
-            flat/targets/**/*.tex
-            flat/targets/**/*.pdf
+          path: flat/targets
           if-no-files-found: error
