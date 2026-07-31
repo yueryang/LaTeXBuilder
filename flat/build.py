@@ -39,6 +39,31 @@ class Builder:
 	__Engines = ("tex", "latex", "luatex", "lualatex", "ptex", "platex", "pdftex", "pdflatex", "uptex", "uplatex", "xetex", "xelatex")
 	__DefaultEngine = "pdflatex"
 	__DefaultCompilationTimeout = 10
+	__ClassicTemplateDirectoryNames = {
+		"ACM.Conferences":"ACMConferences",
+		"Elsevier.Publisher":"Elsevier",
+		"IEEE.Conferences":"IEEEConferences",
+		"IEEE.Journals":"IEEEJournals",
+		"MDPI.Publisher":"MDPI",
+		"Nature.Publisher":"Nature",
+		"Springer.Publisher":"Springer",
+		"TSP.Publisher":"TSP",
+		"Wiley.Publisher":"Wiley"
+	}
+	@staticmethod
+	def __copyTemplateResources(identifier:str, targetDirectoryPath:str) -> None:
+		classicTemplateDirectoryName = Builder.__ClassicTemplateDirectoryNames.get(identifier)
+		if classicTemplateDirectoryName:
+			classicTemplateDirectoryPath = join(
+				dirname(dirname(abspath(__file__))), "classic", classicTemplateDirectoryName
+			)
+			if isdir(classicTemplateDirectoryPath):
+				copytree(
+					classicTemplateDirectoryPath, targetDirectoryPath, dirs_exist_ok = True, 
+					ignore = lambda directoryPath, names: [
+						name for name in names if name == "main" or name.startswith("main.")
+					]
+				)
 	def __init__(self:object, metadataFilePath:str = __DefaultMetadataFilePath) -> object:
 		try:
 			self.__metadataFilePath = str(metadataFilePath)
@@ -70,14 +95,17 @@ class Builder:
 							targetDirectoryPath, targetFileName = split(targetFilePath)
 							if targetDirectoryPath:
 								makedirs(targetDirectoryPath, exist_ok = True)
+							Builder.__copyTemplateResources(identifier, targetDirectoryPath)
 							encoding = target["output"].get("encoding", Builder.__DefaultEncoding)
 							newline = {"cr":"\r", "crlf":"\r\n", "lf":"\n", "macintosh":"\r", "unix":"\n", "windows":"\r\n"}.get(
 								target["output"].get("newline", "auto").lower(), linesep
 							)
-							for key, value in getattr(getattr(Builder.__Templates, target["template"]["name"]), target["template"]["category"]).format(
+							generatedFiles = getattr(getattr(Builder.__Templates, target["template"]["name"]), target["template"]["category"]).format(
 								dirname(self.__metadataFilePath), targetFileName, abstract = dictionary.get("abstract"), authors = dictionary.get("authors"), 
-								keywords = dictionary.get("keywords"), packages = dictionary.get("packages"), tex = dictionary.get("tex"), title = dictionary.get("title")
-							).items():
+								bib = dictionary.get("bib"), keywords = dictionary.get("keywords"), packages = dictionary.get("packages"), 
+								tex = dictionary.get("tex"), title = dictionary.get("title")
+							)
+							for key, value in generatedFiles.items():
 								with open(join(targetDirectoryPath, key), "w", encoding = encoding, newline = "") as f:
 									f.write(newline.join(value) if isinstance(value, (tuple, list)) else str(value))
 							
@@ -115,14 +143,20 @@ class Builder:
 								engine = target["template"]["engine"]
 								if engine not in Builder.__Engines:
 									engine = Builder.__DefaultEngine
-							result = run(
-								(engine, targetFileName), capture_output = True, text = True, 
-								timeout = Builder.__DefaultCompilationTimeout, cwd = targetDirectoryPath
-							)
-							if EXIT_SUCCESS == result.returncode:
-								diagnostics["succeeded"].append(identifier)
+							compilationCommands = [(engine, targetFileName)]
+							if any(splitext(fileName)[1].lower() == ".bib" for fileName in generatedFiles):
+								compilationCommands.append(("bibtex", splitext(targetFileName)[0]))
+							compilationCommands.extend([(engine, targetFileName), (engine, targetFileName)])
+							for compilationCommand in compilationCommands:
+								result = run(
+									compilationCommand, capture_output = True, text = True, 
+									timeout = Builder.__DefaultCompilationTimeout, cwd = targetDirectoryPath
+								)
+								if EXIT_SUCCESS != result.returncode:
+									diagnostics["failed"][identifier] = result
+									break
 							else:
-								diagnostics["failed"][identifier] = result
+								diagnostics["succeeded"].append(identifier)
 						except TimeoutExpired as innerBaseException:
 							diagnostics["failed"][identifier] = {
 								"cmd":innerBaseException.cmd, "stderr":innerBaseException.stderr, 
@@ -140,6 +174,12 @@ class Builders:
 	def __init__(self:object) -> object:
 		self.__filePaths = []
 		self.__builders = []
+	@staticmethod
+	def __getPortableFilePath(path:str) -> str:
+		try:
+			return relpath(path)
+		except ValueError:
+			return abspath(path)
 	def updateFilePaths(self:object, *paths:tuple) -> int:
 		originalLength, stack = len(self.__builders), list(reversed(paths))
 		while stack:
@@ -154,7 +194,7 @@ class Builders:
 						filePaths = []
 						for root, directoryNames, fileNames in walk(element):
 							for fileName in fileNames:
-								relativeFilePath = relpath(join(root, fileName))
+								relativeFilePath = Builders.__getPortableFilePath(join(root, fileName))
 								if (
 									not islink(relativeFilePath) and isfile(relativeFilePath)
 									and splitext(fileName)[1].lower() == ".json"
@@ -167,7 +207,7 @@ class Builders:
 					elif isfile(element):
 						fileName = basename(element)
 						if splitext(fileName)[1] == ".json":
-							relativeFilePath = relpath(element)
+							relativeFilePath = Builders.__getPortableFilePath(element)
 							if relativeFilePath not in self.__filePaths:
 								self.__filePaths.append(relativeFilePath)
 		for filePath in self.__filePaths[originalLength:]:

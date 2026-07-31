@@ -1,12 +1,12 @@
 @ECHO OFF
-SET "RunnerName=Runner for generator.py"
+SET "RunnerName=Runner for UI.py"
 TITLE %RunnerName%
 CD /D "%~DP0"
 CLS
 GOTO SSS
 
 :SSS
-IF EXIST "%WINDIR%\PY.EXE" (%WINDIR%\py.exe generator.py) ELSE (GOTO E)
+IF EXIST "%WINDIR%\PY.EXE" (%WINDIR%\py.exe UI.py) ELSE (GOTO E)
 ECHO %RunnerName%: %%ERRORLEVEL%% = %ERRORLEVEL%
 ECHO %RunnerName%: The sub-process has exited, if you want to run it again, press any key to continue, otherwise just please close this window. 
 PAUSE>NUL
